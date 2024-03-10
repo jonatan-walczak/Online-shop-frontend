@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+html,
+body {
+  font-family: poppins, sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageBanner__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.pageBanner__field {
+  display: flex;
+  align-items: center;
+}
+
+.pageBanner__field--second {
+  justify-content: space-around;
+  width: 50%;
+}
+
+select {
+  border: none;
+  background-color: white;
+}
+
+.horizontalLine {
+  background-color: #f6f7f8;
+  height: 2px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.logo__title {
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  background-image: url("images/promotionimage.png");
+  height: 50vw;
+  background-size: contain;
+}
+
+.hero__title {
+  color: white;
+  height: 2rem;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0 0 10rem 4rem;
+  width: 10em;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  margin-top: -13rem;
+}
+
+.banner__main {
+  display: flex;
+  flex-direction: row;
+  width: 60rem;
+}
+
+.product {
+  height: 20rem;
+  width: 33.33333333333%;
+  background-size: 18rem;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: #f6f6f6;
+  border-radius: 0.2rem;
+  font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.product:hover {
+  background-color: #e4e4e4;
+}
+
+.product--first {
+  background-image: url("images/crossbag.png");
+}
+
+.product--second {
+  background-image: url("images/nike\(1).png");
+}
+
+.product--third {
+  background-image: url("images/nike\(2\).png");
+}
+
+.product__title {
+  font-weight: 900;
+  width: 50%;
+  margin: 0.5rem 0 0 1rem;
+}
+
+.discountInfo__oldPrice {
+  text-decoration: line-through;
+  color: grey;
+  font-weight: 400;
+}
+
+.discountInfo__discount {
+  color: #ff4858;
+  font-weight: bold;
+}
+
+.product__price {
+  color: #04BFFF;
+  font-size: 1.5em;
+}
+
+.bestSeller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.categories {
+  width: 40%;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.categories__category:hover {
+  color: #04bfff;
+  border-bottom: 2px solid #04bfff;
+  margin-bottom: -2px;
+}
+
+.bestSeller__products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 90rem;
+}
+
+.bestProduct {
+  border: 1px solid lightgrey;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+}
+
+.bestProduct__Image {
+  border-radius: 0.3rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.bestProduct__Image--hotLabel {
+  position: absolute;
+}
+
+.bestProduct__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bestProduct__Prices {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 900;
+  font-size: 0.85em;
+  margin-bottom: 1rem;
+}
+
+.bestProduct__rate {
+  margin: 0.5rem;
+}
+
+.bestSeller__loadMore {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  font-size: 1.4em;
+  color: #04BFFF;
+  border-bottom: 2px solid #04bfff;
+}
+
+.adidasMen {
+  background-color: #04bfff;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.adidasMen__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.adidasMen__title {
+  font-size: 3.2em;
+  font-weight: 500;
+}
+
+.adidasMen__description {
+  font-size: 1.1em;
+  margin: 1rem 0 1rem 0;
+}
+
+.adidasMen__link {
+  color: white;
+  padding-bottom: 4px;
+  border-bottom: 3px solid white;
+}
+
+.adidasMen__image {
+  width: 40%;
+  margin-top: -5rem;
+  margin-bottom: 6rem;
+}
+
+.customerInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-top: 5rem;
+}
+
+.customerInfo__element {
+  text-align: center;
+  width: 12rem;
+  font-size: 0.9em;
+}
+
+.customerInfo__title {
+  font-size: 1.7em;
+  font-weight: 400;
+  margin: 3rem 0 1rem 0;
+}
+
+.latestNews {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.latestNews__content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.newsBlock {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.newsBlock__date {
+  color: rgb(158, 158, 158);
+}
+
+.newsBlock__description {
+  margin-left: 2rem;
+}
+
+.newsBlock__title {
+  font-size: 1.4em;
+  margin-top: 0.3rem;
+}
+
+.featuredProducts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.featuredProducts__product {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.featuredProducts__content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.featuredProducts__description {
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.featuredProducts__image {
+  margin-right: 3rem;
+}
+
+.searchQuery {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0 5rem 0;
+}
+
+.searchForm {
+  border: #bcddfe 2px solid;
+  border-radius: 0.5rem;
+}
+
+.searchForm__input {
+  border: none;
+  border-radius: 1rem 0 0 1rem;
+  width: 30rem;
+  font-size: 1.5em;
+}
+
+.searchForm__input:focus {
+  outline: none;
+}
+
+.searchForm__button {
+  background-color: #04bfff;
+  border: none;
+  border-radius: 0 0.2rem 0.2rem 0;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #bcddfe;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerMenu--first {
+  flex-direction: row;
+  padding-top: 5rem;
+}
+
+.footerMenu__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 15rem;
+  align-items: flex-start;
+}
+
+.footerMenu__image {
+  margin: 1rem 1rem 0 0;
+}
+
+.footerMenu__description {
+  font-size: 0.8em;
+}
+
+.footerMenu__title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footerMenu__description--big {
+  width: 12rem;
+}
+
+.footerEcomm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footerEcomm__title {
+  font-size: 1.5em;
+  margin-left: 1rem;
+}
+
+.footerMenu--second {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.footerMenu__secondInformation {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.paymentInfo {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.paymentInfo__image {
+  margin: 1rem;
+}
